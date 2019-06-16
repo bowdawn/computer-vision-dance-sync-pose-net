@@ -19,12 +19,15 @@ pip install opencv-python==3.4.5.20
 ```
 
 #### duo_demo.py 
-duo demo takes one video that is alligned in time and calculates the accuracy between the model and target over time. (the video file paths for the duo video must be specified in the python file)
+duo demo takes one video that is alligned in time and calculates the accuracy between the model and target over time. Video named "project" will be automatically saved into directory after python file finishes running.  (the video file path for the duo video must be specified in the python file)
 
+`python time_independent_demo
+
+View Sample Output:  https://www.youtube.com/watch?v=YxT1fg0QJHU 
 
 #### time_independent_demo.py 
 
-Time Independent demo takes two unalligned videos finds the highest accuracy between them and outputs a video of how accuracte the two videos are over time. (the video file paths for model and target must be specified in the python file)
+Time Independent demo takes two unalligned videos finds the highest accuracy between them and outputs a video of how accuracte the two videos are over time. Video named "project_time" will be automatically saved into directory after python file finishes running. (the video file paths for model and target must be specified in the python file)
 
 `python time_independent_demo.py 
 
@@ -40,7 +43,7 @@ The webcam demo uses OpenCV to capture images from a connected webcam. The resul
 The unofficial python plugin for PoseNet using PyTorch 
 https://github.com/rwightman/posenet-pytorch
 
-### TODO (someday, maybe)1
+### TODO (someday, maybe)
 * Optimize the duo_demo program file
 * Optimize the time_independent demo program file
 
