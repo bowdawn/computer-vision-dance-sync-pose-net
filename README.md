@@ -1,8 +1,8 @@
-## PoseNet Pytorch
+## Dance Comparison using PoseNet Pytorch 
 
 This repository contains a PyTorch implementation (multi-pose only) of the Google TensorFlow.js Posenet model.
 
-This port is based on my Tensorflow Python (https://github.com/rwightman/posenet-python) conversion of the same model. An additional step of the algorithm was performed on the GPU in this implementation so it is faster and consumes less CPU (but more GPU). On a GTX 1080 Ti (or better) it can run over 130fps.
+This port is based on Tensorflow Python (https://github.com/rwightman/posenet-python) conversion of the same model. An additional step of the algorithm was performed on the GPU in this implementation so it is faster and consumes less CPU (but more GPU). On a GTX 1080 Ti (or better) it can run over 130fps.
 
 Further optimization is possible as the MobileNet base models have a throughput of 200-300 fps.
 
