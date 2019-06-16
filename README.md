@@ -23,7 +23,7 @@ duo demo takes one video that is alligned in time and calculates the accuracy be
 
 `python time_independent_demo
 
-View Sample Output:  https://www.youtube.com/watch?v=YxT1fg0QJHU 
+View Sample Output: https://www.youtube.com/watch?v=YxT1fg0QJHU 
 
 #### time_independent_demo.py 
 
@@ -31,7 +31,7 @@ Time Independent demo takes two unalligned videos finds the highest accuracy bet
 
 `python time_independent_demo.py 
 
-
+View Sample Output: https://www.youtube.com/watch?v=QOZejA8n300
 
 #### webcam_demo.py
 
