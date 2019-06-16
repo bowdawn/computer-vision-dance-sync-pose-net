@@ -34,13 +34,12 @@ Image demo runs inference on an input folder of images and outputs those images 
 
 A folder of suitable test images can be downloaded by first running the `get_test_images.py` script.
 
-#### benchmark.py
 
-A minimal performance benchmark based on image_demo. Images in `--image_dir` are pre-loaded and inference is run `--num_images` times with no drawing and no text output.
 
 #### webcam_demo.py
 
-The webcam demo uses OpenCV to capture images from a connected webcam. The result is overlayed with the keypoints and skeletons and rendered to the screen. The default args for the webcam_demo assume device_id=0 for the camera and that 1280x720 resolution is possible.
+The webcam demo uses OpenCV to capture images from a connected webcam. The result is overlayed with the keypoints and skeletons and rendered to the screen. The default args for the webcam_demo assume device_id=0 for the camera and that 1280x720 resolution is possible. A video will automatically be saved to the project directory after the demo finishes running.
+
 
 ### Credits
 
@@ -57,4 +56,6 @@ The Python conversion code that started me on my way was adapted from the CoreML
 * Comment interfaces, tensor dimensions, etc
 * Implement batch inference for image_demo
 * Create a training routine and add models with more advanced CNN backbones
+* Optimize the duo_demo program file
+* Optimize the time_independent demo program file
 
