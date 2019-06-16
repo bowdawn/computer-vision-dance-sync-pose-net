@@ -18,21 +18,15 @@ conda install -c pytorch pytorch cuda100
 pip install opencv-python==3.4.5.20
 ```
 
-### Usage
+#### duo_demo.py 
+duo demo takes one video that is alligned in time and calculates the accuracy between the model and target over time. (the video file paths for the duo video must be specified in the python file)
 
-There are three demo apps in the root that utilize the PoseNet model. They are very basic and could definitely be improved.
 
-The first time these apps are run (or the library is used) model weights will be downloaded from the TensorFlow.js version and converted on the fly.
+#### time_independent_demo.py 
 
-For all demos, the model can be specified with the '--model` argument by using its integer depth multiplier (50, 75, 100, 101). The default is the 101 model.
+Time Independent demo takes two unalligned videos finds the highest accuracy between them and outputs a video of how accuracte the two videos are over time. (the video file paths for model and target must be specified in the python file)
 
-#### image_demo.py 
-
-Image demo runs inference on an input folder of images and outputs those images with the keypoints and skeleton overlayed.
-
-`python image_demo.py --model 101 --image_dir ./images --output_dir ./output`
-
-A folder of suitable test images can be downloaded by first running the `get_test_images.py` script.
+`python time_independent_demo.py 
 
 
 
@@ -43,19 +37,10 @@ The webcam demo uses OpenCV to capture images from a connected webcam. The resul
 
 ### Credits
 
-The original model, weights, code, etc. was created by Google and can be found at https://github.com/tensorflow/tfjs-models/tree/master/posenet
+The unofficial python plugin for PoseNet using PyTorch 
+https://github.com/rwightman/posenet-pytorch
 
-This port and my work is in no way related to Google.
-
-The Python conversion code that started me on my way was adapted from the CoreML port at https://github.com/infocom-tpo/PoseNet-CoreML
-
-### TODO (someday, maybe)
-* More stringent verification of correctness against the original implementation
-* Performance improvements (especially edge loops in 'decode.py')
-* OpenGL rendering/drawing
-* Comment interfaces, tensor dimensions, etc
-* Implement batch inference for image_demo
-* Create a training routine and add models with more advanced CNN backbones
+### TODO (someday, maybe)1
 * Optimize the duo_demo program file
 * Optimize the time_independent demo program file
 
