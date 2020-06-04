@@ -24,6 +24,7 @@ duo demo takes one video that is alligned in time and calculates the accuracy be
 `python time_independent_demo
 
 View Sample Output: https://www.youtube.com/watch?v=YxT1fg0QJHU 
+![](duo_demo.gif)
 
 #### time_independent_demo.py 
 
