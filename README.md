@@ -33,6 +33,7 @@ Time Independent demo takes two unalligned videos finds the highest accuracy bet
 `python time_independent_demo.py 
 
 View Sample Output: https://www.youtube.com/watch?v=QOZejA8n300
+![](time_independent_demo.gif)
 
 #### webcam_demo.py
 
